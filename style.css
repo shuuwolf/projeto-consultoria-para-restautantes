@@ -285,6 +285,7 @@ section.top{
     height: 100%;
     margin-top: 40px;
     font-size: 1.4rem;
+    text-shadow: 1px 1px 5px black;
 }
 
 .btn-section-action{
@@ -314,6 +315,8 @@ section.top{
     top: 1px;
 }
 
+/***Section Seguro***/
+
 .seguro-title{
     background: blue;
     color: white;
@@ -323,6 +326,7 @@ section.top{
 .seguro-text-wrapper{
     font-size: 1.1rem;
     padding: 40px 0;
+    
 }
 
 .seguro-img-wrapper{
@@ -429,5 +433,15 @@ section.contato{
         margin-right: 5px;
         margin-bottom: 0;
         width: 60%;
+    }
+
+    .btn-section-action{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .btn-section-action {
+        font-size: 1.1rem;
     }
 }
