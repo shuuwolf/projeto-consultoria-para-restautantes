@@ -367,7 +367,7 @@ footer{
 
 footer > .container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -415,9 +415,13 @@ section.contato{
         flex-direction: column;
     }
 
-    footer .nav-desktop ul li{
-        display: block;
+    footer .nav-desktop ul{
+        width: 100%;
     }
+
+    /* footer .nav-desktop ul li{
+        display: block;
+    } */
 
     div.text-logo{
         font-size: 4rem;
@@ -427,6 +431,10 @@ section.contato{
 
     .sticky{
         display: none;
+    }
+
+    div.text-wrapper{
+        justify-content: center;
     }
 
     div.text-wrapper h6{
