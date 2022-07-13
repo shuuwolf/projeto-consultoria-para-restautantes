@@ -199,11 +199,14 @@ section.top{
 .analise{
     background:orange;
     color: white;
+    margin-right: 20px;
+    text-shadow: 1px 1px 7px black;
 }
 
-.seemore{
-    background:transparent;
+.analise:hover{
+    background:orange;
     color: white;
+    transform: scale(1.1);
 }
 
 .interesse{
@@ -243,6 +246,15 @@ section.top{
 
 .D-section .D-section-text p{
     font-size: 1.2rem;
+}
+
+.D-section .D-section-text ol{
+    font-size: 1.2rem;
+    margin-left: 30px;
+}
+
+.D-section .D-section-text ol li{
+    line-height: 40px;
 }
 
 /***Cards-Section***/
