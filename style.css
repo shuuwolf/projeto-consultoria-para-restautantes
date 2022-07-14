@@ -65,10 +65,10 @@ div.text-wrapper h6{
 }
 
 div.text-wrapper span{
-    color: red;
+    color: #e9b420;
     font-weight: bold;
-    font-style: italic;
     font-family: 'Oswald', sans-serif!important;
+    text-shadow: 2px 2px 3px#292928;
 }
 
 nav.nav-desktop{
@@ -106,7 +106,7 @@ nav.nav-desktop li a{
 
 nav.nav-desktop li a:hover{
     text-decoration: underline;
-    color: red;
+    color: #e9b420;
 }
 
 div.text-logo{
@@ -185,7 +185,6 @@ section.top{
     background-position: center; */
     color: white;
     width: 100%;
-    height: 100vh;
     font-family: 'Oswald', sans-serif!important;
 }
 
@@ -193,15 +192,8 @@ section.top .container{
     height: 100%;
 }
 
-.home-section-one-wrapper{
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
 .text-top{
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -224,6 +216,16 @@ section.top .container{
     font-size: 1.3rem;
     text-align: justify;
     padding: 0 2%;
+}
+
+.text-top p#sobre-mim{
+    font-size: 1.2rem;
+    padding: 0 2%;
+    text-align: center;
+}
+
+.text-top p#sobre-mim span{
+    font-size: 2rem;
 }
 
 .btn-agendar{
@@ -264,6 +266,42 @@ section.top .container{
 .interesse svg{
     width: 30px;
     height: 30px;
+}
+
+/***Topic Section***/
+.topic-title{
+}
+
+.line-topic{
+    height: 4px;
+    width: 250px;
+    background: green;
+    margin: 10px 0;
+}
+
+.topic-title h1{
+    color: green;
+}
+
+.topic-items{
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.topic-items > div{
+    
+    min-width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: green;
+    margin-right: 30px;
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 2rem;
 }
 
 /***D-Section***/
@@ -572,14 +610,30 @@ form{
         min-height: 400px;
     }
 
-    .home-section-one-wrapper{
-        flex-direction: column-reverse;
-    }
-
     .text-top img{
         width: 100%;
         border-radius: 50%;
         max-width: 300px;
+    }
+
+    .home-section-one-wrapper > div:first-child{
+        order: 1;
+    }
+
+    .text-top{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .interesse{
+        display: none;
+    }
+
+    section.top{
+        padding: 80px 0;
     }
 
 }
@@ -601,18 +655,5 @@ form{
         height: 80px;
         text-shadow: 1px 1px 4px black;
         line-height: 60px;
-    }
-
-    .interesse{
-        background: transparent;
-        border: 0;
-        width: 200px;
-        font-weight: bold;
-        text-transform: uppercase;
-        position: relative;
-        top: -90px;
-        left: 50%;
-        transform: translateX(-50%);
-        cursor: initial;
     }
 }
