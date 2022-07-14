@@ -1,12 +1,14 @@
-
+/* 
+font-family: 'Open Sans', sans-serif; == textos gerais
+font-family: 'Oswald', sans-serif; == titulos/headers
+*/
 /***RESET***/
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-     font-family: "Roboto"; 
-    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
 }
 
 html, body {
@@ -58,7 +60,7 @@ div.text-wrapper{
 }
 
 div.text-wrapper h6{
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Oswald', sans-serif!important;
     font-size: 1.2rem;
 }
 
@@ -66,7 +68,7 @@ div.text-wrapper span{
     color: red;
     font-weight: bold;
     font-style: italic;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Oswald', sans-serif!important;
 }
 
 nav.nav-desktop{
@@ -88,12 +90,13 @@ nav.nav-desktop li a{
     padding: 10px;
     color: white;
     font-size: 1.2rem;
+    font-family: 'Oswald', sans-serif!important;
 }
 
 .header-normal.sticky nav.nav-desktop li a{
     text-decoration: none;
     padding: 10px;
-    color: black;
+    color: black!important;
     font-size: 1.2rem;
 }
 
@@ -126,6 +129,7 @@ nav.nav-mobile{
     border: 1px solid black;
     display: none;
     max-width: 100%;
+    font-family: 'Oswald', sans-serif!important;
 }
 
 nav.nav-mobile ul{
@@ -177,6 +181,7 @@ section.top{
     color: white;
     width: 100%;
     height: 100vh;
+    font-family: 'Oswald', sans-serif!important;
 }
 
 .text-top{
@@ -191,13 +196,17 @@ section.top{
 .btn-agendar{
     width: 100%;
     font-size: 2rem;
-    background-color: green;
+    background-color: #fdcc32;
     color: white;
+    height: 80px;
+    text-shadow: 1px 1px 4px black;
+    line-height: 60px;
 }
 
 .btn-agendar:hover{
-    background-color: green;
+    opacity: 0.8;
     color: white;
+    background-color: #fdcc32!important;
 }
 
 .interesse{
@@ -224,14 +233,16 @@ section.top{
     height: 30px;
 }
 
+.text-top h1{
+    line-height: 7rem;
+}
+
 .text-top h1 mark{
     background-color: rgb(12, 250, 12);
     color: white;
     text-shadow: 1px 1px 2px #292928;
     border-radius: 15px;
 }
-
-/***I-Section***/
 
 /***D-Section***/
 .D-section{
@@ -254,7 +265,7 @@ section.top{
 
 /***Cards-Section***/
 .section-beneficios{
-    padding: 80px 0;
+    padding: 80px 0px 20px 0px;
 }
 
 .beneficios-text-wrapper{
@@ -264,19 +275,18 @@ section.top{
     margin: 20px 1.5%;
     flex-direction: column;
     justify-content: center;
-    box-shadow: 3px 3px 10px rgb(163, 163, 163);
+    box-shadow: 3px 3px 12px rgb(163, 163, 163);
     float: left;
     height: 300px;
-    background: rgb(251,148,63);
-    background: radial-gradient(circle, rgba(251,148,63,1) 30%, rgba(252,70,107,1) 100%);
+    background: #FFE135;
     border-radius: 25px;
 }
 
 .beneficios-text-wrapper p{
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin: 15px 0px 0px 0px;
-    color: white;
+    color: black;
     padding: 0 2%;
 }
 
@@ -288,8 +298,7 @@ section.top{
 
 .section-action{
     padding: 60px 0;
-    background: rgb(251,158,38);
-    background: linear-gradient(90deg, rgba(251,158,38,1) 37%, rgba(254,224,156,1) 90%);    
+    background: rgba(251,158,38,1);
 }
 
 .section-action img{
@@ -297,11 +306,10 @@ section.top{
 }
 
 .section-action .action-text-wrapper{
-    color: white;
+    color: black;
     height: 100%;
     margin-top: 40px;
     font-size: 1.4rem;
-    text-shadow: 1px 1px 5px black;
 }
 
 .btn-section-action{
@@ -396,17 +404,44 @@ footer div.text-logo{
 
 /***Page - Contato***/
 .contato-header{
-    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%)!important;
+    background: black;
+    /* background: url('images/Bem-Vinda-768x614.png'); */
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    color: white;
+    width: 100%;
+    height: 30vh;
+    font-family: 'Oswald', sans-serif!important;
 }
-.rede-sociais{
-    padding: 100px 0;
+
+.text-top-contact{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-contact{
+    padding: 80px 0;
+}
+
+.text-form-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
 }
 
 .all-social-media{
+    width: 100%;
     max-width: 500px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .line{
@@ -423,9 +458,9 @@ footer div.text-logo{
 
 form{
     width: 100%;
-    max-width: 600px;
     padding: 40px;
-    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    background: rgb(242, 242, 242);
     border-radius: 2rem;
 }
 
@@ -433,11 +468,17 @@ form{
     width: 100%;
     max-width: 250px;
     border: 0;
-    border-radius: 1rem;
-    font-size: 1.6rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
     margin: 0 auto;
-    background-color: rgb(253, 166, 84);
+    background-color: #e9b420;
     color: white;
+}
+
+/***Page Quem sou***/
+
+.I-section{
+    padding: 80px 0;
 }
 
 /***ANIMATIONS***/
@@ -508,6 +549,10 @@ form{
         max-width: 46%;
     }
 
+    .text-form-2{
+        min-height: 400px;
+    }
+
 }
 
 @media screen and (max-width: 500px){
@@ -521,17 +566,16 @@ form{
 
     .btn-agendar{
         width: 100%;
-        font-size: 1.3rem;
-        background-color: green;
+        font-size: 1.5rem;
+        background-color: #fdcc32;
         color: white;
-        animation-name: pulse;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
+        height: 80px;
+        text-shadow: 1px 1px 4px black;
+        line-height: 60px;
     }
 
     .text-top h1{
-        font-size: 1.5rem!important;
-        margin: 0;
+        line-height: 4.1rem;
     }
 
     .interesse{
