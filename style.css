@@ -283,7 +283,7 @@ section.top{
     box-shadow: 3px 3px 12px rgb(163, 163, 163);
     float: left;
     height: 300px;
-    background: #FFE135;
+    background: black;
     border-radius: 25px;
 }
 
@@ -291,7 +291,7 @@ section.top{
     text-align: center;
     font-size: 1.3rem;
     margin: 15px 0px 0px 0px;
-    color: black;
+    color: white;
     padding: 0 2%;
 }
 
