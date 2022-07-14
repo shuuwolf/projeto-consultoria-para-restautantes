@@ -178,7 +178,7 @@ nav.nav-mobile ul li a:hover{
 
 /***TOPO***/
 section.top{
-    background: black;
+    background: #434A54;
     /* background: url('images/Bem-Vinda-768x614.png'); */
     /* background-size: cover;
     background-repeat: no-repeat;
@@ -189,13 +189,41 @@ section.top{
     font-family: 'Oswald', sans-serif!important;
 }
 
+section.top .container{
+    height: 100%;
+}
+
+.home-section-one-wrapper{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
 .text-top{
-    width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.text-top img{
+    width: 100%;
+    border-radius: 50%;
+    max-width: 500px;
+}
+
+.text-top h1{
+    width: 100%;
+    text-align: left;
+    color: #fdc818;
+}
+
+.text-top p{
+    font-size: 1.3rem;
+    text-align: justify;
+    padding: 0 2%;
 }
 
 .btn-agendar{
@@ -238,17 +266,6 @@ section.top{
     height: 30px;
 }
 
-.text-top h1{
-    line-height: 7rem;
-}
-
-.text-top h1 mark{
-    background-color: rgb(12, 250, 12);
-    color: white;
-    text-shadow: 1px 1px 2px #292928;
-    border-radius: 15px;
-}
-
 /***D-Section***/
 .D-section{
     padding: 80px 0;
@@ -283,7 +300,7 @@ section.top{
     box-shadow: 3px 3px 12px rgb(163, 163, 163);
     float: left;
     height: 300px;
-    background: black;
+    background: #434A54;
     border-radius: 25px;
 }
 
@@ -315,6 +332,7 @@ section.top{
     height: 100%;
     margin-top: 40px;
     font-size: 1.4rem;
+    padding: 0 2%;
 }
 
 .btn-section-action{
@@ -389,7 +407,7 @@ section.perguntas{
 
 /***Footer***/
 footer{
-    background: black;
+    background: #434A54;
     padding: 30px 0;
     color: white;
 }
@@ -409,7 +427,7 @@ footer div.text-logo{
 
 /***Page - Contato***/
 .contato-header{
-    background: black;
+    background: #434A54;
     /* background: url('images/Bem-Vinda-768x614.png'); */
     /* background-size: cover;
     background-repeat: no-repeat;
@@ -528,10 +546,6 @@ form{
         width: 100%;
     }
 
-    /* footer .nav-desktop ul li{
-        display: block;
-    } */
-
     div.text-logo{
         font-size: 4rem;
         letter-spacing: -15px;
@@ -558,6 +572,16 @@ form{
         min-height: 400px;
     }
 
+    .home-section-one-wrapper{
+        flex-direction: column-reverse;
+    }
+
+    .text-top img{
+        width: 100%;
+        border-radius: 50%;
+        max-width: 300px;
+    }
+
 }
 
 @media screen and (max-width: 500px){
@@ -577,10 +601,6 @@ form{
         height: 80px;
         text-shadow: 1px 1px 4px black;
         line-height: 60px;
-    }
-
-    .text-top h1{
-        line-height: 4.1rem;
     }
 
     .interesse{
