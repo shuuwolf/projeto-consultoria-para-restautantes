@@ -171,6 +171,11 @@ nav.nav-mobile ul li a:hover{
     height: 30px;
 }
 
+#ver_mais{
+    height: 20px;
+    width: 100%;
+}
+
 /***TOPO***/
 section.top{
     background: black;
