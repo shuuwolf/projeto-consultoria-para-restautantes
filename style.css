@@ -229,6 +229,7 @@ section.top{
     background-color: rgb(12, 250, 12);
     color: white;
     text-shadow: 1px 1px 2px #292928;
+    border-radius: 15px;
 }
 
 /***I-Section***/
@@ -535,7 +536,7 @@ footer div.text-logo{
         font-weight: bold;
         text-transform: uppercase;
         position: relative;
-        top: -130px;
+        top: -90px;
         left: 50%;
         transform: translateX(-50%);
         cursor: initial;
