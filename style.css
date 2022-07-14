@@ -38,7 +38,6 @@ header.header-normal{
     background: transparent;
     width: 100%;
     height: 90px;
-    border-bottom: 1px solid black;
     position: fixed;
     top: 0;
     left: 0;
@@ -154,14 +153,11 @@ nav.nav-mobile ul li a:hover{
 
 #nav-trigger{
     display: none;
-    position: absolute;
-    top: 20px;
-    right: 10px;
     background: #ccc;
     border-radius: 10px;
     padding: 10px;
     opacity: 1;
-    margin-left: 3px;
+    margin: 10px 10px 0px 0px;
 }
 
 #nav-trigger svg{
@@ -201,8 +197,6 @@ section.top{
 }
 
 .btn-agendar:hover{
-    width: 100%;
-    font-size: 2rem;
     background-color: green;
     color: white;
 }
@@ -214,7 +208,7 @@ section.top{
     font-weight: bold;
     text-transform: uppercase;
     position: relative;
-    top: -80px;
+    top: -90px;
     left: 50%;
     transform: translateX(-50%);
     cursor: initial;
@@ -222,13 +216,19 @@ section.top{
 
 .interesse p{
     animation-name:arrow-animation;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
     animation-iteration-count: infinite;
 }
 
 .interesse svg{
     width: 30px;
     height: 30px;
+}
+
+.text-top h1 mark{
+    background-color: rgb(12, 250, 12);
+    color: white;
+    text-shadow: 1px 1px 2px #292928;
 }
 
 /***I-Section***/
@@ -423,7 +423,14 @@ footer div.text-logo{
     0%{
         transform: translateY(0px);
     }
+    25%{
+        transform: translateY(10px);
+    }
     50%{
+        transform: translateY(0px);
+    }
+
+    75%{
         transform: translateY(10px);
     }
     100%{
@@ -484,12 +491,6 @@ footer div.text-logo{
         justify-content: center;
     }
 
-    div.text-wrapper h6{
-        margin-right: 5px;
-        margin-bottom: 0;
-        width: 60%;
-    }
-
     .btn-section-action{
         font-size: 1.3rem;
     }
@@ -497,6 +498,7 @@ footer div.text-logo{
     .beneficios-text-wrapper{
         max-width: 46%;
     }
+
 }
 
 @media screen and (max-width: 500px){
@@ -506,5 +508,20 @@ footer div.text-logo{
 
     .beneficios-text-wrapper{
         max-width: 100%;
+    }
+
+    .btn-agendar{
+        width: 100%;
+        font-size: 1.3rem;
+        background-color: green;
+        color: white;
+        animation-name: pulse;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+
+    .text-top h1{
+        font-size: 1.5rem!important;
+        margin: 0;
     }
 }
