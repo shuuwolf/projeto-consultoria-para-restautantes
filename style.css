@@ -1,18 +1,12 @@
 
-/*
-Theme Name: ProjetoMariaClara
-Theme URI: https://google.com
-Author Name: ShuuWolf
-Author URI : https://github.com/shuuwolf
-*/
-
 /***RESET***/
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Roboto";
+     font-family: "Roboto"; 
+    /* font-family: 'Open Sans', sans-serif; */
 }
 
 html, body {
@@ -196,17 +190,21 @@ section.top{
     flex-direction: column;
 }
 
-.analise{
-    background:orange;
+.btn-agendar{
+    width: 100%;
+    font-size: 2rem;
+    background-color: green;
     color: white;
-    margin-right: 20px;
-    text-shadow: 1px 1px 7px black;
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
-.analise:hover{
-    background:orange;
+.btn-agendar:hover{
+    width: 100%;
+    font-size: 2rem;
+    background-color: green;
     color: white;
-    transform: scale(1.1);
 }
 
 .interesse{
@@ -269,7 +267,8 @@ section.top{
     box-shadow: 3px 3px 10px rgb(163, 163, 163);
     float: left;
     height: 300px;
-    background-color: #461f00;
+    background: rgb(251,148,63);
+    background: radial-gradient(circle, rgba(251,148,63,1) 30%, rgba(252,70,107,1) 100%);
     border-radius: 25px;
 }
 
@@ -431,6 +430,21 @@ footer div.text-logo{
         transform: translateY(0px);
     }
 }
+
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+/***RESPONSIVE***/
 
 @media screen and (max-width:768px){
     .nav-desktop{
