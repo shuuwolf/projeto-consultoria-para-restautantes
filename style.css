@@ -527,4 +527,17 @@ footer div.text-logo{
         font-size: 1.5rem!important;
         margin: 0;
     }
+
+    .interesse{
+        background: transparent;
+        border: 0;
+        width: 200px;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+        top: -130px;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: initial;
+    }
 }
