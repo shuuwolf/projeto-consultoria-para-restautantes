@@ -322,6 +322,31 @@ section.top{
     font-size: 2rem;
 }
 
+/***ETAPAS CONSULTORIA***/
+
+.consultoria-etapas{
+   margin-top: 2rem;
+}
+
+.consultoria-title{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.consultoria-etapas h4{
+    color: red;
+    font-weight: bold;
+}
+
+.consultoria-etapas h4 span{
+    color: blue;
+}
+
+.consultoria-etapas p{
+    text-indent: 2rem;
+    font-size: 1.3rem;
+}
+
 /***D-Section***/
 .D-section{
     padding: 80px 0;
