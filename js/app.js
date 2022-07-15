@@ -12,6 +12,20 @@ $(".projeto-item").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     autoPlay: true,
-    speed: 1000,
+    autoPlaySpeed: 1000,
     dots: true,
-});
+    responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            dots: false
+          }
+        },
+        {
+            breakpoint: 500,
+            settings: {
+              dots: false,
+              arrows: false
+            }
+          },
+    ]});
