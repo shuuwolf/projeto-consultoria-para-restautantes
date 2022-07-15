@@ -217,9 +217,11 @@ section.top .container{
 
 .text-marker{
     color: white;
-    background: green;
+    background: orange;
+    /* background: #ffff07; */
     padding: 0.2rem;
-    text-shadow: 1px 1px 2px #292928;
+    text-shadow: 1px 2px 3px #292928;
+    font-size: 1.5rem;
 }
 
 .text-top p#sobre-mim{
@@ -288,11 +290,23 @@ section.top .container{
 }
 
 .topic-items{
-    width: 100%;
-    max-width: 700px;
+    width: 90%;
     display: flex;
+    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    margin: 20px auto;
+    background-color: #212e26;
+    height: 250px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 30px;
+    color: white;
+    padding: 20px;
+}
+
+.topic-items h5{
+    font-size: 1.4rem;
+    font-weight: bold;
 }
 
 .topic-items > div{
@@ -300,11 +314,10 @@ section.top .container{
     min-width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: green;
-    margin-right: 30px;
+    background: white;
     display: grid;
     place-items: center;
-    color: white;
+    color: black;
     font-size: 2rem;
 }
 
@@ -799,6 +812,10 @@ section.ebook-beneficios{
 
     .text-top h1{
         text-align: center;
+    }
+
+    .topic-items{
+        width: 100%;
     }
 
 }
